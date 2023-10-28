@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎥</text></svg>">
+  <title>
+    FlickPick - Movie Recommendation
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="../assets/css/material-kit-pro.css?v=3.0.4" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+  <!-- Nepcha Analytics (nepcha.com) -->
+  <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+</head>
+
+<body class="rental bg-gray-200">
+  <!-- Navbar Transparent -->
+  <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3  navbar-transparent ">
+    <div class="container">
+      <a class="navbar-brand text-white d-none d-md-block custom-navbar-brand enhanced-navbar-brand" href="/" rel="tooltip" title="FlickPick by Rafiq Lightwala" data-placement="bottom" target="_blank">
+        FlickPick &#x1F3A5;
+      </a>
+      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover ms-auto">
+        </ul>
+        <ul class="navbar-nav d-lg-block d-none">
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- End Navbar -->
+  <!-- -------- START HEADER 4 w/ search book a ticket form ------- -->
+  <header>
+    <div class="page-header min-vh-45" style="background-image: url('assets/img/custom/popcorn-movie.jpg');" loading="lazy">
+      <span class="mask bg-gradient-dark opacity-4"></span>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-white text-center enhanced-text">
+            <h2 class="text-white enhanced-heading">
+              <span id="typewriter"></span>
+            </h2>
+            <p class="lead enhanced-paragraph">Don't worry, FlickPick to the rescue 😅</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- -------- END HEADER 4 w/ search book a ticket form ------- -->
+  <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 overflow-hidden">
+    <div class="container">
+      <div class="row border-radius-md pb-4 p-3 mx-sm-0 mx-1 position-relative">
+        <div class="col-lg-9 mt-lg-n2 mt-2">
+          <label class="ms-0">Search by Movie Name</label>
+          <div class="input-group input-group-static">
+            <span class="input-group-text"></span>
+            <input class="form-control search-bar" placeholder="Enter Movie Title" style="width: 100%;" type="text">
+          </div>
+        </div>
+        <div class="col-lg-3 mt-lg-n2 mt-2">
+          <label>&nbsp;</label>
+          <button type="button" class="btn bg-gradient-primary w-100 mb-0 search-button">Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row border-radius-md pb-4 p-3 mx-sm-0 mx-1 position-relative">
+        <div class="col-lg-3 mt-lg-n2 mt-2">
+          <label class="ms-0">Filter by Genre</label>
+          <select class="form-control" name="genre-button" id="genre-button">
+            <option value="All" selected="">All</option>
+            <option value="Action">Action</option>
+            <option value="Crime">Crime</option>
+            <option value="Drama">Drama</option>
+            <option value="Horror">Horror</option>
+            <option value="Sci-fi">Sci-fi</option>
+          </select>
+        </div>
+        <div class="col-lg-3 mt-lg-n2 mt-2">
+          <label class="ms-0">Filter by User Ratings</label>
+          <select class="form-control" name="ratings-button" id="ratings-button">
+            <option value="All" selected="">All</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+          </select>
+        </div>
+        <div class="col-lg-3 mt-lg-n2 mt-2">
+          <label class="ms-0">Filter by Content Ratings</label>
+          <select class="form-control" name="mpaa-button" id="mpaa-button">
+            <option value="All" selected="">All</option>
+            <option value="G">G - General Audiences</option>
+            <option value="PG">PG - Parental Guidance</option>
+            <option value="PG-13">PG-13 - Parents Strongly Cautioned</option>
+            <option value="R">R - Restricted</option>
+            <option value="NC-17">NC-17 - Adults Only</option>
+            <option value="NR">NR - Not Rated</option>
+          </select>
+        </div>        
+        <div class="col-lg-3 mt-lg-n2 mt-2">
+          <label class="ms-0">Filter by Year</label>
+          <select class="form-control" name="year-button" id="year-button">
+            <option value="All" selected="">All</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+            <option value="2011">2011</option>
+            <option value="2010">2010</option>
+            <option value="2009">2009</option>
+            <option value="2008">2008</option>
+            <option value="2007">2007</option>
+            <option value="2006">2006</option>
+            <option value="2005">2005</option>
+            <option value="2004">2004</option>
+            <option value="2003">2003</option>
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>            
+            <!-- Add more as needed -->
+          </select>
+        </div>
+      </div>
+    </div>
+    
+    <section class="pt-2 pb-0">
+      <div class="container">
+        <div class="row" id="movieContainer">
+
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+  <footer class="footer pt-5 mt-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-md-3 mb-4 ms-auto">
+          <div>
+            <h6 class="font-weight-bolder mb-4">FlickPick</h6>
+          </div>
+          <div>
+            <ul class="d-flex flex-row ms-n3 nav">
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.facebook.com/" target="_blank">
+                  <i class="fab fa-facebook text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://twitter.com/" target="_blank">
+                  <i class="fab fa-twitter text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://dribbble.com/" target="_blank">
+                  <i class="fab fa-dribbble text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://github.com/" target="_blank">
+                  <i class="fab fa-github text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.youtube.com/" target="_blank">
+                  <i class="fab fa-youtube text-lg opacity-8"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <p class="text-dark my-4 text-sm font-weight-normal">
+              All rights reserved. Copyright © <script>
+                document.write(new Date().getFullYear())
+              </script> FlickPick by <a href="https://github.com/rafiqlightwala/" target="_blank">Rafiq Lightwala</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="movieModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="modalImage" src="" alt="Movie Banner" />
+      <h2 id="modalTitle">Movie Title</h2>
+      <div class="modal-body">
+        <div class="modal-details">
+          <p><strong>Genre:</strong> <span id="modalGenre"></span></p>
+          <p><strong>User Rating:</strong> <span id="modalRating"></span></p>
+          <p><strong>Year of Release:</strong> <span id="modalYear"></span></p>
+          <p><strong>Content Rating:</strong> <span id="modalContentRating"></span></p>
+        </div>
+        <div class="modal-description">
+          <p><strong>Detailed Description:</strong></p> 
+          <span id="modalDescription"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <!--  Plugin for TypedJS, full documentation here: https://github.com/mattboldt/typed.js/ -->
+  <script src="../assets/js/plugins/typedjs.js"></script>
+  <script src="../assets/js/plugins/choices.min.js"></script>
+  <script src="../assets/js/plugins/flatpickr.min.js"></script>
+  <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+  <script src="../assets/js/plugins/parallax.min.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!--  Plugin for the blob animation -->
+  <script src="../assets/js/plugins/anime.min.js" type="text/javascript"></script>
+  <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+  <script src="../assets/js/material-kit-pro.min.js?v=3.0.4" type="text/javascript"></script>
+  <script>
+    if (document.getElementById('genre-button')) {
+      var element = document.getElementById('genre-button');
+      const example = new Choices(element, {
+        searchEnabled: false,
+        shouldSort: false,
+        position: 'below',
+      });
+
+    }
+    if (document.getElementById('ratings-button')) {
+      var element = document.getElementById('ratings-button');
+      const example = new Choices(element, {
+        searchEnabled: false,
+        shouldSort: false,
+        position: 'below',
+      });
+    }
+    if (document.getElementById('year-button')) {
+      var element = document.getElementById('year-button');
+      const example = new Choices(element, {
+        searchEnabled: false,
+        shouldSort: false,
+        position: 'below',
+      });
+    }
+    if (document.getElementById('mpaa-button')) {
+      var element = document.getElementById('mpaa-button');
+      const example = new Choices(element, {
+        searchEnabled: false,
+        shouldSort: false,
+        position: 'below',
+      });
+    }
+  </script>
+  <script src="./scripts/movieData.js"></script>
+  <script src="scripts/index.js"></script>
+
+</body>
+
+</html>

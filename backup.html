@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <title>
+    Movie Recommendation Engine
+  </title>
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="./assets/css/material-kit-pro.css?v=3.0.4" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="main-container">
+
+    <!-- Search Bar -->
+    <div class="search">
+      <input type="text" class="search-bar" placeholder="Search for movies...">
+      <button class="search-button">Search</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="filter">
+      <select class="genre-filter">
+        <option value="" disabled selected>Filter by Genre</option>
+        <option value="Action">Action</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Drama">Drama</option>
+      </select>
+      
+      <select class="year-filter">
+        <option value="" disabled selected>Filter by Year</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+      </select>
+      
+      <select class="rating-filter">
+        <option value="" disabled selected>Filter by Rating</option>
+        <option value="5">5 stars</option>
+        <option value="4">4 stars</option>
+        <option value="3">3 stars</option>
+      </select>
+    </div>
+
+    <!-- Movie Grid -->
+    <div class="movie-grid">
+      <!-- Movie cards will be appended here -->
+    </div>
+
+    <!-- Movie Details Pop-up (initially hidden) -->
+    <div class="movie-details" style="display:none;">
+      <h3 class="movie-title"></h3>
+      <img class="movie-poster" src="poser" alt="">
+      <p class="movie-genre"></p>
+      <p class="movie-rating"></p>
+      <button class="close-button">Close</button>
+    </div>
+
+    <!-- Last Updated Info -->
+    <div class="last-updated">
+      <!-- Last updated date will be displayed here -->
+    </div>
+
+  </div>
+
+  <!-- JavaScript goes here -->
+  <script src="scripts/index.js"></script>
+
+</body>
+</html>
