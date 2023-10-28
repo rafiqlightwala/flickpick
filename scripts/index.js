@@ -142,10 +142,6 @@ function showModal(movie) {
   modal.classList.add('fade-in');
 }
 
-modal.addEventListener('animationend', function() {
-  modal.classList.remove('fade-in');
-});
-
 // Function to close the modal
 function closeModal() {
   document.getElementById('movieModal').style.display = 'none';

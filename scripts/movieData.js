@@ -91,7 +91,7 @@
   },
   {
     title: "The Social Network",
-    genre: "Drama, Biography",
+    genre: "Drama",
     rating: 5,
     year: 2010,
     contentRating: "PG-13",
@@ -101,7 +101,7 @@
   },
   {
     title: "Finding Nemo",
-    genre: "Animation, Adventure",
+    genre: "Animation",
     rating: 4,
     year: 2003,
     contentRating: "G",
@@ -111,7 +111,7 @@
   },
   {
     title: "Titanic",
-    genre: "Romance, Drama",
+    genre: "Romance",
     rating: 4,
     year: 1997,
     contentRating: "PG-13",
@@ -121,7 +121,7 @@
   },
   {
     title: "Avatar",
-    genre: "Sci-fi, Action",
+    genre: "Sci-fi",
     rating: 4,
     year: 2009,
     contentRating: "PG-13",
@@ -131,7 +131,7 @@
   },
   {
     title: "Frozen",
-    genre: "Animation, Family",
+    genre: "Animation",
     rating: 4,
     year: 2013,
     contentRating: "PG",
@@ -151,7 +151,7 @@
   },
   {
     title: "Jaws",
-    genre: "Thriller, Adventure",
+    genre: "Horror",
     rating: 5,
     year: 1975,
     contentRating: "PG",
@@ -161,7 +161,7 @@
   },
   {
     title: "Rocky",
-    genre: "Sport, Drama",
+    genre: "Drama",
     rating: 4,
     year: 1976,
     contentRating: "PG",
@@ -181,7 +181,7 @@
   },
   {
     title: "Gone with the Wind",
-    genre: "Drama, Romance",
+    genre: "Romance",
     rating: 4,
     year: 1939,
     contentRating: "G",
@@ -191,7 +191,7 @@
   },
   {
     title: "Toy Story",
-    genre: "Animation, Comedy",
+    genre: "Animation",
     rating: 5,
     year: 1995,
     contentRating: "G",
@@ -201,7 +201,7 @@
   },
   {
     title: "Gladiator",
-    genre: "Action, Drama",
+    genre: "Action",
     rating: 5,
     year: 2000,
     contentRating: "R",
